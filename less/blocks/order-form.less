@@ -1,0 +1,109 @@
+.order-form {
+  background-color: #2f3032;
+  padding-bottom: 23px;
+}
+
+.order-form__wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  @media (min-width: 880px) {
+    padding: 0 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -23px;
+      right: 50px;
+      display: block;
+      width: 215px;
+      height: 215px;
+      background: url("../img/photo/photo-3.png") center center no-repeat;
+    }
+  }
+}
+
+.order-form__title {
+  margin: 3px 0 25px;
+  text-align: center;
+  font-family: Roboto-Light, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #c9c9c9;
+  font-weight: 200;
+  text-transform: uppercase;
+  @media (min-width: 880px) {
+    text-align: left;
+  }
+}
+
+.order-form__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  @media (min-width: 620px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 610px;
+  }
+  @media (min-width: 880px) {
+    margin: 0;
+  }
+}
+
+.order-form__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 140px;
+  margin-bottom: 12px;
+}
+
+.order-form__user-name,
+.order-form__user-phone,
+.order-form__user-email {
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-family: Roboto-Light, sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.order-form__comment {
+  width: 276px;
+  height: 140px;
+  margin-bottom: 12px;
+  padding: 0 12px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-family: Roboto-Light, sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  resize: none;
+}
+
+.order-form__button {
+  width: 170px;
+  height: 52px;
+  background-color: #9f9f9f;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: Roboto-Medium, sans-serif;
+  font-size: 18px;
+  line-height: 52px;
+  color: #ededed;
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+  }
+  @media (min-width: 620px) {
+    margin-left: auto;
+  }
+}
